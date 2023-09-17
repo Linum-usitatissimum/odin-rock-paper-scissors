@@ -54,13 +54,139 @@
 //If scissors and paper is picked; scissors wins.
 
 
-
-
-
-
-
 //Get a randomised number:
 
+
+window.prompt("Type in one of the following: Rock, Paper or Scissors","");
+
+let text = prompt("");
+
+let i=0;
+let end = 5;
+
+if(i => 5) {
+
+    function game(){
+
+
+        function getComputerChoice() {
+            let min = 1;
+            let max = 4;
+            let pickForMe = Math.floor(Math.random() * (max - min) + min);
+            return pickForMe;
+        }
+ 
+  //console.log(getComputerChoice());
+
+
+//this code assigns rock/paper/scissor variables to numbers 1-3
+  
+//define inputted text and turn it to uppercase
+
+
+
+        let playerSelect = text.toUpperCase();
+
+        let nameOfText = playerSelect;
+
+//console.log(playerSelect);
+
+
+//this code checks which of the three words matches the inputted text
+
+        if(nameOfText) {
+            !! "ROCK";
+            nameOfText=1;
+        }
+  
+        else if(nameOfText) {
+
+            !! "PAPER";
+             nameOfText=2;
+        } 
+  
+        else {
+             nameOfText=3;
+        }
+
+
+    //console.log("rock");
+
+//weigh nameOfText against getComputerChoice
+
+        function weighResults(nameOfText, getComputerChoice){
+            let indexPlaya = 0;
+            let indexComputa = 0;
+
+            if(nameOfText == getComputerChoice){
+                /*console.log("It's a tie");*/
+                let phraseBe = "It's a tie!";
+                indexPlaya = indexPlaya + 0;
+                indexComputa = indexComputa + 0;
+                return phraseBe;
+            }
+            else if(nameOfText < getComputerChoice){
+                 /*
+                 console.log("computer wins!");*/
+                let mumursBe = "Computer wins!";
+                indexPlaya = indexPlaya + 0;
+                indexComputa = indexComputa + 1;
+                return mumursBe;
+            }
+            else {
+                /*console.log("You win!");*/
+                let wordsBe = "You win!";
+                indexPlaya = indexPlaya + 1;
+                indexComputa = indexComputa + 0;
+                return wordsBe;
+            }
+        }
+
+        console.log(weighResults(1, 2));
+
+        ++i;
+    }
+    
+    
+
+
+    ////////
+
+        //if (indexPlaya > indexComputa) {
+        //    console.log("You won!");
+      //  }
+       // else if(indexPlaya < indexComputa) {
+        //     console.log("You lose! The Computer wins!");
+       // }
+       // else {
+       //      console.log("Nobody wins, it's a tie!");
+       // }
+
+       // ++i;
+
+}
+else {
+    if (indexPlaya > indexComputa) {
+        console.log("You won!");
+    }
+    else if(indexPlaya < indexComputa) {
+        console.log("You lose! The Computer wins!");
+    }
+    else {
+        console.log("Nobody wins, it's a tie!");
+    }
+}
+
+console.log(game)
+
+
+/*
+
+
+
+
+
+ )
 function getComputerChoice() {
     let min = 1;
     let max = 4;
@@ -68,20 +194,20 @@ function getComputerChoice() {
     return pickForMe;
   }
  
-  console.log(getComputerChoice());
+  //console.log(getComputerChoice());
 
 
 //this code assigns rock/paper/scissor variables to numbers 1-3
   
 //define inputted text and turn it to uppercase
 
-let text = "RoCK";
+
 
 let playerSelect = text.toUpperCase();
 
 let nameOfText = playerSelect;
 
-console.log(playerSelect);
+//console.log(playerSelect);
 
 
 //this code checks which of the three words matches the inputted text
@@ -102,20 +228,84 @@ if(nameOfText) {
   }
 
 
-    console.log("rock");
+    //console.log("rock");
 
 //weigh nameOfText against getComputerChoice
 
 function weighResults(nameOfText, getComputerChoice){
+    let indexPlaya = 0;
+    let indexComputa = 0;
+
     if(nameOfText == getComputerChoice){
-    console.log("It's a tie");
+    /*console.log("It's a tie");*/
+    let phraseBe = "It's a tie!";
+    indexPlaya = indexPlaya + 0;
+    indexComputa = indexComputa + 0;
+    return phraseBe;
     }
     else if(nameOfText < getComputerChoice){
-    console.log("computer wins!");
+        /*
+    console.log("computer wins!");*/
+    let mumursBe = "Computer wins!";
+    indexPlaya = indexPlaya + 0;
+    indexComputa = indexComputa + 1;
+    return mumursBe;
     }
     else {
-    console.log("You win!");
+    /*console.log("You win!");*/
+    let wordsBe = "You win!";
+    indexPlaya = indexPlaya + 1;
+    indexComputa = indexComputa + 0;
+    return wordsBe;
     }
     }
-    
+
     console.log(weighResults(1, 2));
+
+
+    ////////
+
+    ++i;
+}
+
+else {
+    if (indexPlaya > indexComputa) {
+        console.log("You won!");
+    }
+    else if(indexPlaya < indexComputa) {
+        console.log("You lose! The Computer wins!");
+    }
+    else {
+        console.log("Nobody wins, it's a tie!");
+    }
+    return;
+}
+
+
+
+console.log(game)
+
+
+
+ 
+
+
+
+
+    /*What the Odin Project wants me to input??? Why when I worked it out myself? -_-
+
+    function playRound(playerSelection, computerSelection) {
+        // your code here!
+
+      }
+       
+      const playerSelection = "rock";
+
+      const computerSelection = getComputerChoice();
+
+      console.log(playRound(playerSelection, computerSelection));*/
+
+
+      ///I will come back tomorrow to play with this some more after I am finished with my studies. For the short-while-now it is done. 
+
+      //I do need to apply conditionals (methinks), that weighs up rock/paper, paper/scissors etc and returns a more exact value such as: You lost, paper wins against rock! Or, "You lost, scissors wins against paper!" But for today, I am pleased. I have worked very hard. Proud of ya kid (myself that is)!
