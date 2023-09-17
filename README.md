@@ -8,7 +8,7 @@ This will be my first time completing this project.
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
-  - [Rules of the Game](#Rules of the Game)
+  - [Rules of the Game](#rules-of-the-game)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
