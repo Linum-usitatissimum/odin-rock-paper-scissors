@@ -53,13 +53,69 @@
 
 //If scissors and paper is picked; scissors wins.
 
+
+
+
+
+
+
 //Get a randomised number:
 
-  function getComputerChoice() {
+function getComputerChoice() {
     let min = 1;
     let max = 4;
     let pickForMe = Math.floor(Math.random() * (max - min) + min);
     return pickForMe;
   }
  
-  console.log(getComputerChoice())
+  console.log(getComputerChoice());
+
+
+//this code assigns rock/paper/scissor variables to numbers 1-3
+  
+//define inputted text and turn it to uppercase
+
+let text = "RoCK";
+
+let playerSelect = text.toUpperCase();
+
+let nameOfText = playerSelect;
+
+console.log(playerSelect);
+
+
+//this code checks which of the three words matches the inputted text
+
+if(nameOfText) {
+    !! "ROCK";
+    nameOfText=1;
+  }
+  
+  else if(nameOfText) {
+
+    !! "PAPER";
+    nameOfText=2;
+  } 
+  
+  else {
+    nameOfText=3;
+  }
+
+
+    console.log("rock");
+
+//weigh nameOfText against getComputerChoice
+
+function weighResults(nameOfText, getComputerChoice){
+    if(nameOfText == getComputerChoice){
+    console.log("It's a tie");
+    }
+    else if(nameOfText < getComputerChoice){
+    console.log("computer wins!");
+    }
+    else {
+    console.log("You win!");
+    }
+    }
+    
+    console.log(weighResults(1, 2));
